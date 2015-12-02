@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web Development Project</title>
+</head>
+<body>
+    
+<h1>Data Encoding Table</h1>
+<table border="1">
+    <tr>
+        <td colspan="4"><span style="font-weight:bold;">Playing Inside:</span> Every time someone started playing a game, the time they started playing, the game they <br>
+        started playing, etc. is encoded. By combining all of the components, it is possible to find out when people <br>played and what they played.</td>
+    </tr>
+    <tr>
+        <th>COMPONENT</th>
+        <th>TYPE</th>
+        <th>NUMBER OF BITS/RANGE</th>
+        <th>DESCRIPTION/COMMENTS</th>
+    </tr>
+    <tr>
+        <td>Who Played</td>
+        <td>ASCII</td>
+        <td>256 bits (0-32 chars)</td>
+        <td>Name of the person playing</td>
+    </tr>
+    <tr>
+        <td>What they played</td>
+        <td>ASCII</td>
+        <td>800 bits (0-100 chars)</td>
+        <td>The game that the person played</td>
+    </tr>
+    <tr>
+        <td>Device played on</td>
+        <td>ASCII</td>
+        <td>256 bits (0-32 chars)</td>
+        <td>Name of what they were playing on</td>
+    </tr>
+    <tr>
+        <td>How long they played</td>
+        <td>Number</td>
+        <td>9 bits (0-511 mins) (0-8.5 hrs)</td>
+        <td>The amount of time they played</td>
+    </tr>
+    <tr>
+        <td>Order they started playing</td>
+        <td>Number</td>
+        <td>7 bits (0-127 chars)</td>
+        <td>The order of when they started playing</td>
+    </tr>
+</table>
+</body>
+</html>
